@@ -1,0 +1,29 @@
+<?php 
+
+$cabeceras = 'MIME-Version: 1.0' . "\r\n";
+$cabeceras .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+$cabeceras .= 'From: Mi Nombre<yo@correo.com>';
+
+$nom       = "Luis";
+$tel       = 8123737541;
+$email     = "luis.segovia244@gmail.com";
+
+			$mensaje = "<html>";
+			$mensaje .= "<head><title>Email con HTML</title></head>";
+			$mensaje .= "<div style='font-family: Arial, Helvetica, sans-serif; font-size:12px; width:600px; color: #000000; background-color:#EEEEEE; border-radius:5px; '>";
+			$mensaje .= "<img src='../images/Safe(1).png' alt='SafeSolutions'>";
+			$mensaje .= "<hr>";
+			$mensaje .= "<body><h1>! SafeSolutions - Nuevo Mensaje !</h1>";
+			$mensaje .= "Nuevo correo de: ".$nom."<br>";
+			$mensaje .= "Telefono: ".$tel."<br>";
+			$mensaje .= "Email: ".$email."<br>";
+			$mensaje .= "<hr>";
+			$mensaje .= "Enviado por: http://safesolutions.com.mx/";
+			$mensaje .= "</div";
+			$mensaje .= "</body>"; 
+			$mensaje .= "</html>"; 
+
+
+echo($mensaje);
+
+ ?>
